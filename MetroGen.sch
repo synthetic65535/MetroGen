@@ -1,0 +1,2120 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BC817 Q4
+U 1 1 5A757600
+P 7600 2300
+F 0 "Q4" H 7800 2375 50  0000 L CNN
+F 1 "BC817" H 7800 2300 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 7800 2225 50  0001 L CIN
+F 3 "https://www.chipdip.ru/product/bc817-40lt1" H 7600 2300 50  0001 L CNN
+	1    7600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC807 Q5
+U 1 1 5A757851
+P 8050 1600
+F 0 "Q5" H 8250 1650 50  0000 L CNN
+F 1 "BC807" H 8250 1550 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 8250 1525 50  0001 L CIN
+F 3 "https://www.chipdip.ru/product/bc807-40lt1g-2" H 8050 1600 50  0001 L CNN
+	1    8050 1600
+	1    0    0    1   
+$EndComp
+Text GLabel 8300 2200 2    55   Input ~ 0
+VBAT_CTRL
+Text GLabel 6950 2300 0    55   Input ~ 0
+DIV_EN
+$Comp
+L GNDD #PWR7
+U 1 1 5BD20F0B
+P 1100 7400
+F 0 "#PWR7" H 1100 7150 50  0001 C CNN
+F 1 "GNDD" H 1100 7275 50  0001 C CNN
+F 2 "" H 1100 7400 50  0001 C CNN
+F 3 "" H 1100 7400 50  0001 C CNN
+	1    1100 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATMEGA328P-AU U2
+U 1 1 5BD20F35
+P 2100 6050
+F 0 "U2" H 1350 7300 50  0000 L BNN
+F 1 "ATMEGA328P-AU" H 2500 4650 50  0000 L BNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 2100 6050 50  0001 C CIN
+F 3 "https://www.chipdip.ru/product/atmega328p-au" H 2100 6050 50  0001 C CNN
+	1    2100 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR6
+U 1 1 5BD210A6
+P 1100 4750
+F 0 "#PWR6" H 1100 4600 50  0001 C CNN
+F 1 "+3.3V" H 1100 4890 50  0000 C CNN
+F 2 "" H 1100 4750 50  0001 C CNN
+F 3 "" H 1100 4750 50  0001 C CNN
+	1    1100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x03_Odd_Even J2
+U 1 1 5BD21241
+P 2850 3900
+F 0 "J2" H 2900 4100 50  0000 C CNN
+F 1 "BH-06" H 2900 3700 50  0000 C CNN
+F 2 "MyFootprints:AVR_ISP" H 2850 3900 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/idc-06ms-bh-06" H 2850 3900 50  0001 C CNN
+	1    2850 3900
+	1    0    0    -1  
+$EndComp
+Text Notes 2750 3650 0    55   ~ 0
+AVR ISP
+Text GLabel 2500 3800 0    55   Input ~ 0
+MISO
+Text GLabel 2500 3900 0    55   Input ~ 0
+SCK
+Text GLabel 2500 4000 0    55   Input ~ 0
+RES
+Text GLabel 3300 3900 2    55   Input ~ 0
+MOSI
+$Comp
+L +3.3V #PWR10
+U 1 1 5BD2152E
+P 2100 4150
+F 0 "#PWR10" H 2100 4000 50  0001 C CNN
+F 1 "+3.3V" V 2100 4400 50  0000 C CNN
+F 2 "" H 2100 4150 50  0001 C CNN
+F 3 "" H 2100 4150 50  0001 C CNN
+	1    2100 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5BD215BF
+P 2350 4150
+F 0 "R4" V 2430 4150 50  0000 C CNN
+F 1 "10k" V 2350 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2280 4150 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 2350 4150 50  0001 C CNN
+	1    2350 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR13
+U 1 1 5BD21724
+P 3300 3700
+F 0 "#PWR13" H 3300 3550 50  0001 C CNN
+F 1 "+3.3V" H 3300 3840 50  0000 C CNN
+F 2 "" H 3300 3700 50  0001 C CNN
+F 3 "" H 3300 3700 50  0001 C CNN
+	1    3300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR14
+U 1 1 5BD21761
+P 3300 4050
+F 0 "#PWR14" H 3300 3800 50  0001 C CNN
+F 1 "GNDD" H 3300 3925 50  0001 C CNN
+F 2 "" H 3300 4050 50  0001 C CNN
+F 3 "" H 3300 4050 50  0001 C CNN
+	1    3300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP1700-3302E_SOT23 U3
+U 1 1 5BD21BA7
+P 5700 1200
+F 0 "U3" H 5550 1325 50  0000 C CNN
+F 1 "MCP1700-3302E" H 5700 1325 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 5700 1425 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/mcp1700t-3302e-tt" H 5700 1200 50  0001 C CNN
+	1    5700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_I2C U5
+U 1 1 5BD21DE1
+P 6350 7000
+F 0 "U5" H 6350 7300 60  0000 C CNN
+F 1 "Display_I2C" H 6350 6700 60  0000 C CNN
+F 2 "MyFootprints:Display_SSD1306" H 6450 7000 60  0001 C CNN
+F 3 "chinese" H 6450 7000 60  0001 C CNN
+	1    6350 7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 5650 6850 0    55   Input ~ 0
+SDA
+Text GLabel 3250 6200 2    55   Input ~ 0
+SDA
+Text GLabel 3250 6300 2    55   Input ~ 0
+SCL
+Text GLabel 5650 6950 0    55   Input ~ 0
+SCL
+$Comp
+L GNDD #PWR27
+U 1 1 5BD22213
+P 5950 7250
+F 0 "#PWR27" H 5950 7000 50  0001 C CNN
+F 1 "GNDD" H 5950 7125 50  0001 C CNN
+F 2 "" H 5950 7250 50  0001 C CNN
+F 3 "" H 5950 7250 50  0001 C CNN
+	1    5950 7250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 7050 2    55   Input ~ 0
+DISPLAY_PWR
+$Comp
+L R R11
+U 1 1 5BD2268F
+P 5750 6600
+F 0 "R11" H 5600 6600 50  0000 C CNN
+F 1 "10k" V 5750 6600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5680 6600 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 5750 6600 50  0001 C CNN
+	1    5750 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 5BD2279C
+P 5950 6500
+F 0 "R13" H 6100 6500 50  0000 C CNN
+F 1 "10k" V 5950 6500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5880 6500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 5950 6500 50  0001 C CNN
+	1    5950 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR25
+U 1 1 5BD22930
+P 5750 6350
+F 0 "#PWR25" H 5750 6200 50  0001 C CNN
+F 1 "+3.3V" H 5750 6490 50  0000 C CNN
+F 2 "" H 5750 6350 50  0001 C CNN
+F 3 "" H 5750 6350 50  0001 C CNN
+	1    5750 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR26
+U 1 1 5BD22996
+P 5950 6250
+F 0 "#PWR26" H 5950 6100 50  0001 C CNN
+F 1 "+3.3V" H 5950 6390 50  0000 C CNN
+F 2 "" H 5950 6250 50  0001 C CNN
+F 3 "" H 5950 6250 50  0001 C CNN
+	1    5950 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRF5810TRPBF Q3
+U 1 1 5BD22EFD
+P 4300 1250
+F 0 "Q3" V 4600 1200 50  0000 L CNN
+F 1 "IRF5810TRPBF" V 4500 1000 50  0000 L CNN
+F 2 "MyFootprints:SOT-23-6_HandSoldering" H 4450 1175 50  0001 L CIN
+F 3 "https://www.chipdip.ru/product/irf5810trpbf" H 4250 1250 50  0001 L CNN
+	1    4300 1250
+	0    1    -1   0   
+$EndComp
+$Comp
+L IRF5810TRPBF Q3
+U 2 1 5BD23086
+P 4750 1150
+F 0 "Q3" V 4950 1050 50  0000 L CNN
+F 1 "IRF5810TRPBF" V 5050 850 50  0000 L CNN
+F 2 "MyFootprints:SOT-23-6_HandSoldering" H 4900 1075 50  0001 L CIN
+F 3 "https://www.chipdip.ru/product/irf5810trpbf" H 4700 1150 50  0001 L CNN
+	2    4750 1150
+	0    -1   1    0   
+$EndComp
+Text Notes 8850 3750 0    60   ~ 0
+1 Watt
+$Comp
+L D_TVS_ALT D4
+U 1 1 5BD4DD18
+P 9700 4050
+F 0 "D4" V 9700 4200 50  0000 C CNN
+F 1 "SM6T6V8CA" H 9700 3950 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMB_Handsoldering" H 9700 4050 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/sm6t6v8ca" H 9700 4050 50  0001 C CNN
+	1    9700 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR49
+U 1 1 5BD4E4FF
+P 9700 4300
+F 0 "#PWR49" H 9700 4050 50  0001 C CNN
+F 1 "GNDD" H 9700 4175 50  0001 C CNN
+F 2 "" H 9700 4300 50  0001 C CNN
+F 3 "" H 9700 4300 50  0001 C CNN
+	1    9700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR46
+U 1 1 5BD4EA5A
+P 9300 4300
+F 0 "#PWR46" H 9300 4050 50  0001 C CNN
+F 1 "GNDD" H 9300 4175 50  0001 C CNN
+F 2 "" H 9300 4300 50  0001 C CNN
+F 3 "" H 9300 4300 50  0001 C CNN
+	1    9300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R27
+U 1 1 5BD55559
+P 8700 4050
+F 0 "R27" H 8850 4050 50  0000 C CNN
+F 1 "10k" V 8700 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8630 4050 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 8700 4050 50  0001 C CNN
+	1    8700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR41
+U 1 1 5BD55696
+P 8700 4300
+F 0 "#PWR41" H 8700 4050 50  0001 C CNN
+F 1 "GNDD" H 8700 4175 50  0001 C CNN
+F 2 "" H 8700 4300 50  0001 C CNN
+F 3 "" H 8700 4300 50  0001 C CNN
+	1    8700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push_SPDT SW1
+U 1 1 5BD5666C
+P 4700 3450
+F 0 "SW1" H 4700 3620 50  0000 C CNN
+F 1 "MSW-11" H 4700 3250 50  0000 C CNN
+F 2 "MyFootprints:SM5-00N-115" H 4700 3450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/sm5-00n-115-msw-11" H 4700 3450 50  0001 C CNN
+	1    4700 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Battery_Cell BT1
+U 1 1 5BD5EA75
+P 3650 1700
+F 0 "BT1" H 3750 1800 50  0000 L CNN
+F 1 "Li-ion" H 3750 1700 50  0000 L CNN
+F 2 "MyFootprints:Case_Adaptive_for_18650-3" V 3650 1760 50  0001 C CNN
+F 3 "" V 3650 1760 50  0001 C CNN
+	1    3650 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR16
+U 1 1 5BD5EB60
+P 3650 2000
+F 0 "#PWR16" H 3650 1750 50  0001 C CNN
+F 1 "GNDD" H 3650 1875 50  0001 C CNN
+F 2 "" H 3650 2000 50  0001 C CNN
+F 3 "" H 3650 2000 50  0001 C CNN
+	1    3650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC817 Q2
+U 1 1 5BD685F6
+P 4200 2350
+F 0 "Q2" H 4400 2425 50  0000 L CNN
+F 1 "BC817" H 4400 2350 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 4400 2275 50  0001 L CIN
+F 3 "https://www.chipdip.ru/product/bc817-40lt1" H 4200 2350 50  0001 L CNN
+	1    4200 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 2350 0    55   Input ~ 0
+PWR_HOLD
+$Comp
+L GNDD #PWR17
+U 1 1 5BD6A045
+P 4300 2800
+F 0 "#PWR17" H 4300 2550 50  0001 C CNN
+F 1 "GNDD" H 4300 2675 50  0001 C CNN
+F 2 "" H 4300 2800 50  0001 C CNN
+F 3 "" H 4300 2800 50  0001 C CNN
+	1    4300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5BD6A3A0
+P 4300 1900
+F 0 "R8" H 4450 1900 50  0000 C CNN
+F 1 "1k" V 4300 1900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4230 1900 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079486" H 4300 1900 50  0001 C CNN
+	1    4300 1900
+	1    0    0    1   
+$EndComp
+$Comp
+L D_ALT D2
+U 1 1 5BD6B4D4
+P 5100 950
+F 0 "D2" V 5100 800 50  0000 C CNN
+F 1 "SM4007" H 5100 1050 50  0000 C CNN
+F 2 "Diodes_SMD:D_MELF_Handsoldering" H 5100 950 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/sm4007" H 5100 950 50  0001 C CNN
+	1    5100 950 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3600 1050 2    55   Input ~ 0
+VBAT
+$Comp
+L C C6
+U 1 1 5BD6DA91
+P 5250 1500
+F 0 "C6" H 5275 1600 50  0000 L CNN
+F 1 "1uF" H 5275 1400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5288 1350 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000038356" H 5250 1500 50  0001 C CNN
+	1    5250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 5BD6DB7D
+P 6150 1500
+F 0 "C7" H 6175 1600 50  0000 L CNN
+F 1 "1uF" H 6175 1400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6188 1350 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000038356" H 6150 1500 50  0001 C CNN
+	1    6150 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR23
+U 1 1 5BD6DD83
+P 5250 1750
+F 0 "#PWR23" H 5250 1500 50  0001 C CNN
+F 1 "GNDD" H 5250 1625 50  0001 C CNN
+F 2 "" H 5250 1750 50  0001 C CNN
+F 3 "" H 5250 1750 50  0001 C CNN
+	1    5250 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR28
+U 1 1 5BD6DEDE
+P 6150 1750
+F 0 "#PWR28" H 6150 1500 50  0001 C CNN
+F 1 "GNDD" H 6150 1625 50  0001 C CNN
+F 2 "" H 6150 1750 50  0001 C CNN
+F 3 "" H 6150 1750 50  0001 C CNN
+	1    6150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR24
+U 1 1 5BD6E10F
+P 5700 1750
+F 0 "#PWR24" H 5700 1500 50  0001 C CNN
+F 1 "GNDD" H 5700 1625 50  0001 C CNN
+F 2 "" H 5700 1750 50  0001 C CNN
+F 3 "" H 5700 1750 50  0001 C CNN
+	1    5700 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR29
+U 1 1 5BD6E322
+P 6250 1200
+F 0 "#PWR29" H 6250 1050 50  0001 C CNN
+F 1 "+3.3V" V 6250 1450 50  0000 C CNN
+F 2 "" H 6250 1200 50  0001 C CNN
+F 3 "" H 6250 1200 50  0001 C CNN
+	1    6250 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR47
+U 1 1 5BD6F2E5
+P 9450 5550
+F 0 "#PWR47" H 9450 5400 50  0001 C CNN
+F 1 "+5V" H 9450 5690 50  0000 C CNN
+F 2 "" H 9450 5550 50  0001 C CNN
+F 3 "" H 9450 5550 50  0001 C CNN
+	1    9450 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 5BD6F355
+P 9450 5800
+F 0 "C12" H 9475 5900 50  0000 L CNN
+F 1 "0.1uF" H 9475 5700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9488 5650 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/grm21br71h104k" H 9450 5800 50  0001 C CNN
+	1    9450 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR48
+U 1 1 5BD6FB68
+P 9450 6050
+F 0 "#PWR48" H 9450 5800 50  0001 C CNN
+F 1 "GNDD" H 9450 5925 50  0001 C CNN
+F 2 "" H 9450 6050 50  0001 C CNN
+F 3 "" H 9450 6050 50  0001 C CNN
+	1    9450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C13
+U 1 1 5BD6FD81
+P 9800 5800
+F 0 "C13" H 9825 5900 50  0000 L CNN
+F 1 "100uF" H 9825 5700 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-D_EIA-7343-31_Hand" H 9838 5650 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/816822220" H 9800 5800 50  0001 C CNN
+	1    9800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR50
+U 1 1 5BD6FEC8
+P 9800 5550
+F 0 "#PWR50" H 9800 5400 50  0001 C CNN
+F 1 "+5V" H 9800 5690 50  0000 C CNN
+F 2 "" H 9800 5550 50  0001 C CNN
+F 3 "" H 9800 5550 50  0001 C CNN
+	1    9800 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR51
+U 1 1 5BD6FFD8
+P 9800 6050
+F 0 "#PWR51" H 9800 5800 50  0001 C CNN
+F 1 "GNDD" H 9800 5925 50  0001 C CNN
+F 2 "" H 9800 6050 50  0001 C CNN
+F 3 "" H 9800 6050 50  0001 C CNN
+	1    9800 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_OTG J1
+U 1 1 5BD72788
+P 1150 3150
+F 0 "J1" H 950 3600 50  0000 L CNN
+F 1 "USB_OTG" H 950 3500 50  0000 L CNN
+F 2 "MyFootprints:USB_Mini-B" H 1300 3100 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/tyco-1734035-1" H 1300 3100 50  0001 C CNN
+	1    1150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR5
+U 1 1 5BD72C9F
+P 1100 3650
+F 0 "#PWR5" H 1100 3400 50  0001 C CNN
+F 1 "GNDD" H 1100 3525 50  0001 C CNN
+F 2 "" H 1100 3650 50  0001 C CNN
+F 3 "" H 1100 3650 50  0001 C CNN
+	1    1100 3650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1450 3250
+NoConn ~ 1450 3150
+NoConn ~ 1450 3350
+$Comp
+L C C11
+U 1 1 5BD7B06C
+P 8700 5800
+F 0 "C11" H 8725 5900 50  0000 L CNN
+F 1 "0.1uF" H 8725 5700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8738 5650 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/grm21br71h104k" H 8700 5800 50  0001 C CNN
+	1    8700 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR43
+U 1 1 5BD7B072
+P 8700 6050
+F 0 "#PWR43" H 8700 5800 50  0001 C CNN
+F 1 "GNDD" H 8700 5925 50  0001 C CNN
+F 2 "" H 8700 6050 50  0001 C CNN
+F 3 "" H 8700 6050 50  0001 C CNN
+	1    8700 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR42
+U 1 1 5BD7B1C3
+P 8700 5550
+F 0 "#PWR42" H 8700 5400 50  0001 C CNN
+F 1 "+3.3V" H 8700 5690 50  0000 C CNN
+F 2 "" H 8700 5550 50  0001 C CNN
+F 3 "" H 8700 5550 50  0001 C CNN
+	1    8700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_TVS_ALT D6
+U 1 1 5BD7B82F
+P 10200 5800
+F 0 "D6" V 10200 5950 50  0000 C CNN
+F 1 "SM6T6V8CA" H 10200 5700 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMB_Handsoldering" H 10200 5800 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/sm6t6v8ca" H 10200 5800 50  0001 C CNN
+	1    10200 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR56
+U 1 1 5BD7BAC9
+P 10200 6050
+F 0 "#PWR56" H 10200 5800 50  0001 C CNN
+F 1 "GNDD" H 10200 5925 50  0001 C CNN
+F 2 "" H 10200 6050 50  0001 C CNN
+F 3 "" H 10200 6050 50  0001 C CNN
+	1    10200 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR55
+U 1 1 5BD7BC15
+P 10200 5550
+F 0 "#PWR55" H 10200 5400 50  0001 C CNN
+F 1 "+5V" H 10200 5690 50  0000 C CNN
+F 2 "" H 10200 5550 50  0001 C CNN
+F 3 "" H 10200 5550 50  0001 C CNN
+	1    10200 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Zener_ALT D8
+U 1 1 5BD7C3F2
+P 10550 5800
+F 0 "D8" V 10550 5950 50  0000 C CNN
+F 1 "DL4734" H 10550 5700 50  0000 C CNN
+F 2 "Diodes_SMD:D_MELF_Handsoldering" H 10550 5800 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/dl4734a" H 10550 5800 50  0001 C CNN
+	1    10550 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR60
+U 1 1 5BD7CDC7
+P 10550 6050
+F 0 "#PWR60" H 10550 5800 50  0001 C CNN
+F 1 "GNDD" H 10550 5925 50  0001 C CNN
+F 2 "" H 10550 6050 50  0001 C CNN
+F 3 "" H 10550 6050 50  0001 C CNN
+	1    10550 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR59
+U 1 1 5BD7CE53
+P 10550 5550
+F 0 "#PWR59" H 10550 5400 50  0001 C CNN
+F 1 "+5V" H 10550 5690 50  0000 C CNN
+F 2 "" H 10550 5550 50  0001 C CNN
+F 3 "" H 10550 5550 50  0001 C CNN
+	1    10550 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 5BD7F067
+P 4200 5600
+F 0 "Y1" V 4200 5400 50  0000 C CNN
+F 1 "12MHz" V 4200 5900 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-4H_Vertical" H 4200 5600 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/12mhz-hc-49s" H 4200 5600 50  0001 C CNN
+	1    4200 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L C C4
+U 1 1 5BD7F997
+P 4550 5400
+F 0 "C4" V 4600 5200 50  0000 L CNN
+F 1 "22pF" V 4600 5500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4588 5250 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/29844" H 4550 5400 50  0001 C CNN
+	1    4550 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C5
+U 1 1 5BD7FD6D
+P 4550 5800
+F 0 "C5" V 4600 5600 50  0000 L CNN
+F 1 "22pF" V 4600 5900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4588 5650 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/29844" H 4550 5800 50  0001 C CNN
+	1    4550 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GNDD #PWR20
+U 1 1 5BD7FFE8
+P 4950 5650
+F 0 "#PWR20" H 4950 5400 50  0001 C CNN
+F 1 "GNDD" H 4950 5525 50  0001 C CNN
+F 2 "" H 4950 5650 50  0001 C CNN
+F 3 "" H 4950 5650 50  0001 C CNN
+	1    4950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Core_Ferrite_Small L1
+U 1 1 5BD8226F
+P 1850 2950
+F 0 "L1" V 1950 2900 50  0000 L CNN
+F 1 "BLM21PG331SN1D" H 1900 2900 50  0001 L CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 1850 2950 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/blm21pg331sn1d" H 1850 2950 50  0001 C CNN
+	1    1850 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L L_Core_Ferrite_Small L2
+U 1 1 5BD8374F
+P 10250 3800
+F 0 "L2" V 10350 3750 50  0000 L CNN
+F 1 "BLM21PG331SN1D" H 10300 3750 50  0001 L CNN
+F 2 "Inductors_SMD:L_0805_HandSoldering" H 10250 3800 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/blm21pg331sn1d" H 10250 3800 50  0001 C CNN
+	1    10250 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R28
+U 1 1 5BD857D9
+P 9900 2500
+F 0 "R28" H 10050 2500 50  0000 C CNN
+F 1 "1k" V 9900 2500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9830 2500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079486" H 9900 2500 50  0001 C CNN
+	1    9900 2500
+	1    0    0    1   
+$EndComp
+Text GLabel 3250 7250 2    55   Input ~ 0
+PWR_HOLD
+$Comp
+L Audio-Jack-3 J3
+U 1 1 5BD67190
+P 10700 3850
+F 0 "J3" H 10650 4025 50  0000 C CNN
+F 1 "ST-033" H 10800 3780 50  0000 C CNN
+F 2 "MyFootprints:Audio_Jack_3.5" H 10950 3950 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/st-033" H 10950 3950 50  0001 C CNN
+	1    10700 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR61
+U 1 1 5BD681AF
+P 10900 4050
+F 0 "#PWR61" H 10900 3800 50  0001 C CNN
+F 1 "GNDD" H 10900 3925 50  0001 C CNN
+F 2 "" H 10900 4050 50  0001 C CNN
+F 3 "" H 10900 4050 50  0001 C CNN
+	1    10900 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 10400 3600 0    60   ~ 0
+3.5 Audio Jack
+$Comp
+L GNDD #PWR38
+U 1 1 5BD6F1FC
+P 8150 2600
+F 0 "#PWR38" H 8150 2350 50  0001 C CNN
+F 1 "GNDD" H 8150 2475 50  0001 C CNN
+F 2 "" H 8150 2600 50  0001 C CNN
+F 3 "" H 8150 2600 50  0001 C CNN
+	1    8150 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR35
+U 1 1 5BD6F38D
+P 7700 2600
+F 0 "#PWR35" H 7700 2350 50  0001 C CNN
+F 1 "GNDD" H 7700 2475 50  0001 C CNN
+F 2 "" H 7700 2600 50  0001 C CNN
+F 3 "" H 7700 2600 50  0001 C CNN
+	1    7700 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7600 1050 0    55   Input ~ 0
+VBAT
+$Comp
+L R R7
+U 1 1 5BD6ABE1
+P 4000 1450
+F 0 "R7" H 4150 1450 50  0000 C CNN
+F 1 "100k" V 4000 1450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3930 1450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079538" H 4000 1450 50  0001 C CNN
+	1    4000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R21
+U 1 1 5BD7331D
+P 9900 1050
+F 0 "R21" H 10050 1050 50  0000 C CNN
+F 1 "10k" V 9900 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9830 1050 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 9900 1050 50  0001 C CNN
+	1    9900 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R22
+U 1 1 5BD7353F
+P 9900 1600
+F 0 "R22" H 10050 1600 50  0000 C CNN
+F 1 "10k" V 9900 1600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9830 1600 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 9900 1600 50  0001 C CNN
+	1    9900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R16
+U 1 1 5BD7360E
+P 7700 1350
+F 0 "R16" H 7850 1350 50  0000 C CNN
+F 1 "10k" V 7700 1350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7630 1350 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 7700 1350 50  0001 C CNN
+	1    7700 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R17
+U 1 1 5BD73776
+P 7700 1900
+F 0 "R17" H 7850 1900 50  0000 C CNN
+F 1 "10k" V 7700 1900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7630 1900 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 7700 1900 50  0001 C CNN
+	1    7700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 5BD73863
+P 8150 2000
+F 0 "R19" H 8300 2000 50  0000 C CNN
+F 1 "10k" V 8150 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8080 2000 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 8150 2000 50  0001 C CNN
+	1    8150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR53
+U 1 1 5BD74489
+P 9900 3150
+F 0 "#PWR53" H 9900 2900 50  0001 C CNN
+F 1 "GNDD" H 9900 3025 50  0001 C CNN
+F 2 "" H 9900 3150 50  0001 C CNN
+F 3 "" H 9900 3150 50  0001 C CNN
+	1    9900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL431AIDBZR D7
+U 1 1 5BD75244
+P 9900 2950
+F 0 "D7" H 10050 2950 50  0000 C CNN
+F 1 "TL431" H 9750 2850 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" V 9900 2950 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/tl431aidbzr" V 9900 2950 50  0001 C CNN
+	1    9900 2950
+	-1   0    0    -1  
+$EndComp
+Text GLabel 10500 2750 2    55   Input ~ 0
+AREF
+$Comp
+L C C14
+U 1 1 5BD781FD
+P 10350 2950
+F 0 "C14" H 10375 3050 50  0000 L CNN
+F 1 "1nF" H 10375 2850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10388 2800 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/522764173" H 10350 2950 50  0001 C CNN
+	1    10350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR58
+U 1 1 5BD7881C
+P 10350 3150
+F 0 "#PWR58" H 10350 2900 50  0001 C CNN
+F 1 "GNDD" H 10350 3025 50  0001 C CNN
+F 2 "" H 10350 3150 50  0001 C CNN
+F 3 "" H 10350 3150 50  0001 C CNN
+	1    10350 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 7150 2    55   Input ~ 0
+DIV_EN
+Text GLabel 3250 4950 2    55   Input ~ 0
+AREF_EN
+Text Notes 10150 2750 0    60   ~ 0
+2.5V
+Text GLabel 1100 5550 0    55   Input ~ 0
+AREF
+$Comp
+L GNDD #PWR52
+U 1 1 5BD7C2FF
+P 9900 1850
+F 0 "#PWR52" H 9900 1600 50  0001 C CNN
+F 1 "GNDD" H 9900 1725 50  0001 C CNN
+F 2 "" H 9900 1850 50  0001 C CNN
+F 3 "" H 9900 1850 50  0001 C CNN
+	1    9900 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 5BD7C9B7
+P 10250 1600
+F 0 "C9" H 10275 1700 50  0000 L CNN
+F 1 "1nF" H 10275 1500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10288 1450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/522764173" H 10250 1600 50  0001 C CNN
+	1    10250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR57
+U 1 1 5BD7CDB6
+P 10250 1850
+F 0 "#PWR57" H 10250 1600 50  0001 C CNN
+F 1 "GNDD" H 10250 1725 50  0001 C CNN
+F 2 "" H 10250 1850 50  0001 C CNN
+F 3 "" H 10250 1850 50  0001 C CNN
+	1    10250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R20
+U 1 1 5BD82BA4
+P 8150 2400
+F 0 "R20" H 8300 2400 50  0000 C CNN
+F 1 "10k" V 8150 2400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8080 2400 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 8150 2400 50  0001 C CNN
+	1    8150 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 6300 0    55   Input ~ 0
+AREF/2
+Text GLabel 10350 1350 2    55   Input ~ 0
+AREF/2
+Text GLabel 1100 6400 0    55   Input ~ 0
+VBAT_CTRL
+Text GLabel 5650 7050 0    55   Input ~ 0
+DISPLAY_PWR
+$Comp
+L GNDD #PWR34
+U 1 1 5BD8DE58
+P 7000 6100
+F 0 "#PWR34" H 7000 5850 50  0001 C CNN
+F 1 "GNDD" H 7000 5975 50  0001 C CNN
+F 2 "" H 7000 6100 50  0001 C CNN
+F 3 "" H 7000 6100 50  0001 C CNN
+	1    7000 6100
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 5650 2    55   Input ~ 0
+EXT_PWR
+$Comp
+L +5V #PWR9
+U 1 1 5BD91441
+P 2000 2950
+F 0 "#PWR9" H 2000 2800 50  0001 C CNN
+F 1 "+5V" V 2000 3150 50  0000 C CNN
+F 2 "" H 2000 2950 50  0001 C CNN
+F 3 "" H 2000 2950 50  0001 C CNN
+	1    2000 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR21
+U 1 1 5BD94592
+P 5100 750
+F 0 "#PWR21" H 5100 600 50  0001 C CNN
+F 1 "+5V" H 5100 890 50  0000 C CNN
+F 2 "" H 5100 750 50  0001 C CNN
+F 3 "" H 5100 750 50  0001 C CNN
+	1    5100 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR18
+U 1 1 5BD947ED
+P 4750 750
+F 0 "#PWR18" H 4750 600 50  0001 C CNN
+F 1 "+5V" H 4750 890 50  0000 C CNN
+F 2 "" H 4750 750 50  0001 C CNN
+F 3 "" H 4750 750 50  0001 C CNN
+	1    4750 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R9
+U 1 1 5BD9540C
+P 7000 5400
+F 0 "R9" H 7150 5400 50  0000 C CNN
+F 1 "10k" V 7000 5400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6930 5400 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 7000 5400 50  0001 C CNN
+	1    7000 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R10
+U 1 1 5BD9556F
+P 7000 5900
+F 0 "R10" H 7150 5900 50  0000 C CNN
+F 1 "10k" V 7000 5900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6930 5900 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 7000 5900 50  0001 C CNN
+	1    7000 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR33
+U 1 1 5BD964AF
+P 7000 5200
+F 0 "#PWR33" H 7000 5050 50  0001 C CNN
+F 1 "+5V" H 7000 5340 50  0000 C CNN
+F 2 "" H 7000 5200 50  0001 C CNN
+F 3 "" H 7000 5200 50  0001 C CNN
+	1    7000 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 6100 2    55   Input ~ 0
+EXT_PWR
+Text GLabel 3250 5350 2    55   Input ~ 0
+MISO
+Text GLabel 3250 6400 2    55   Input ~ 0
+RES
+Text GLabel 3250 5450 2    55   Input ~ 0
+SCK
+Text GLabel 3250 5250 2    55   Input ~ 0
+MOSI
+Text GLabel 3250 6750 2    55   Input ~ 0
+EXT_PWR
+$Comp
+L R R6
+U 1 1 5BDA3F87
+P 3800 2350
+F 0 "R6" V 3880 2350 50  0000 C CNN
+F 1 "10k" V 3800 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3730 2350 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 3800 2350 50  0001 C CNN
+	1    3800 2350
+	0    1    1    0   
+$EndComp
+Text GLabel 9800 2250 0    55   Input ~ 0
+AREF_EN
+$Comp
+L R R14
+U 1 1 5BD73C48
+P 7150 2300
+F 0 "R14" V 7250 2300 50  0000 C CNN
+F 1 "10k" V 7150 2300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7080 2300 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 7150 2300 50  0001 C CNN
+	1    7150 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L LMV321 U4
+U 1 1 5BDAC3C8
+P 7050 3800
+F 0 "U4" H 7050 4000 50  0000 L CNN
+F 1 "LMV321" H 7050 3600 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 7050 3800 50  0001 L CNN
+F 3 "https://www.chipdip.ru/product/lmv321ilt" H 7050 3800 50  0001 C CNN
+	1    7050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Zener_ALT D5
+U 1 1 5BDAE0BD
+P 10050 4050
+F 0 "D5" V 10050 4200 50  0000 C CNN
+F 1 "DL4734" H 10050 3950 50  0000 C CNN
+F 2 "Diodes_SMD:D_MELF_Handsoldering" H 10050 4050 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/dl4734a" H 10050 4050 50  0001 C CNN
+	1    10050 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR54
+U 1 1 5BDAEAB9
+P 10050 4300
+F 0 "#PWR54" H 10050 4050 50  0001 C CNN
+F 1 "GNDD" H 10050 4175 50  0001 C CNN
+F 2 "" H 10050 4300 50  0001 C CNN
+F 3 "" H 10050 4300 50  0001 C CNN
+	1    10050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR37
+U 1 1 5BDB202F
+P 7950 4350
+F 0 "#PWR37" H 7950 4100 50  0001 C CNN
+F 1 "GNDD" H 7950 4225 50  0001 C CNN
+F 2 "" H 7950 4350 50  0001 C CNN
+F 3 "" H 7950 4350 50  0001 C CNN
+	1    7950 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR32
+U 1 1 5BDB2294
+P 6950 4150
+F 0 "#PWR32" H 6950 3900 50  0001 C CNN
+F 1 "GNDD" H 6950 4025 50  0001 C CNN
+F 2 "" H 6950 4150 50  0001 C CNN
+F 3 "" H 6950 4150 50  0001 C CNN
+	1    6950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR31
+U 1 1 5BDB343E
+P 6950 3450
+F 0 "#PWR31" H 6950 3300 50  0001 C CNN
+F 1 "+3.3V" H 6950 3590 50  0000 C CNN
+F 2 "" H 6950 3450 50  0001 C CNN
+F 3 "" H 6950 3450 50  0001 C CNN
+	1    6950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 5BDB3D5F
+P 9000 3800
+F 0 "R23" V 9080 3800 50  0000 C CNN
+F 1 "100" V 9000 3800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 8930 3800 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/692800836" H 9000 3800 50  0001 C CNN
+	1    9000 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3V #PWR36
+U 1 1 5BDB46D1
+P 7950 3250
+F 0 "#PWR36" H 7950 3100 50  0001 C CNN
+F 1 "+3.3V" H 7950 3390 50  0000 C CNN
+F 2 "" H 7950 3250 50  0001 C CNN
+F 3 "" H 7950 3250 50  0001 C CNN
+	1    7950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC817 Q6
+U 1 1 5BDB6464
+P 7850 3500
+F 0 "Q6" H 8050 3575 50  0000 L CNN
+F 1 "BC817" H 8050 3500 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 8050 3425 50  0001 L CIN
+F 3 "https://www.chipdip.ru/product/bc817-40lt1" H 7850 3500 50  0001 L CNN
+	1    7850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC807 Q7
+U 1 1 5BDB67B6
+P 7850 4100
+F 0 "Q7" H 8050 4150 50  0000 L CNN
+F 1 "BC807" H 8050 4050 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 8050 4025 50  0001 L CIN
+F 3 "https://www.chipdip.ru/product/bc807-40lt1g-2" H 7850 4100 50  0001 L CNN
+	1    7850 4100
+	1    0    0    1   
+$EndComp
+$Comp
+L C C8
+U 1 1 5BDB7702
+P 6350 3950
+F 0 "C8" H 6375 4050 50  0000 L CNN
+F 1 "0.1uF" H 6375 3850 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6388 3800 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/grm21br71h104k" H 6350 3950 50  0001 C CNN
+	1    6350 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR30
+U 1 1 5BDB7F21
+P 6350 4150
+F 0 "#PWR30" H 6350 3900 50  0001 C CNN
+F 1 "GNDD" H 6350 4025 50  0001 C CNN
+F 2 "" H 6350 4150 50  0001 C CNN
+F 3 "" H 6350 4150 50  0001 C CNN
+	1    6350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R15
+U 1 1 5BDB8A57
+P 7450 4550
+F 0 "R15" V 7550 4550 50  0000 C CNN
+F 1 "10k" V 7450 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7380 4550 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 7450 4550 50  0001 C CNN
+	1    7450 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R12
+U 1 1 5BDBF86F
+P 6100 3700
+F 0 "R12" V 6200 3700 50  0000 C CNN
+F 1 "10k" V 6100 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6030 3700 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 6100 3700 50  0001 C CNN
+	1    6100 3700
+	0    1    1    0   
+$EndComp
+Text GLabel 5850 3700 0    55   Input ~ 0
+PWM
+Text GLabel 3250 5050 2    55   Input ~ 0
+PWM
+Text GLabel 9800 800  0    55   Input ~ 0
+AREF
+Text Label 1500 2950 0    60   ~ 0
+VBUS
+Text Label -950 700  3    60   ~ 0
+VBUS
+$Comp
+L PWR_FLAG #FLG3
+U 1 1 5BDEBF04
+P -950 650
+F 0 "#FLG3" H -950 725 50  0001 C CNN
+F 1 "PWR_FLAG" H -950 800 50  0000 C CNN
+F 2 "" H -950 650 50  0001 C CNN
+F 3 "" H -950 650 50  0001 C CNN
+	1    -950 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR2
+U 1 1 5BDEC70F
+P -500 700
+F 0 "#PWR2" H -500 450 50  0001 C CNN
+F 1 "GNDD" H -500 575 50  0001 C CNN
+F 2 "" H -500 700 50  0001 C CNN
+F 3 "" H -500 700 50  0001 C CNN
+	1    -500 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG4
+U 1 1 5BDEC882
+P -500 650
+F 0 "#FLG4" H -500 725 50  0001 C CNN
+F 1 "PWR_FLAG" H -500 800 50  0000 C CNN
+F 2 "" H -500 650 50  0001 C CNN
+F 3 "" H -500 650 50  0001 C CNN
+	1    -500 650 
+	1    0    0    -1  
+$EndComp
+Text Label 5100 1200 0    60   ~ 0
+REG_IN
+Text Label -1400 700  3    60   ~ 0
+REG_IN
+$Comp
+L PWR_FLAG #FLG2
+U 1 1 5BDED3FA
+P -1400 650
+F 0 "#FLG2" H -1400 725 50  0001 C CNN
+F 1 "PWR_FLAG" H -1400 800 50  0000 C CNN
+F 2 "" H -1400 650 50  0001 C CNN
+F 3 "" H -1400 650 50  0001 C CNN
+	1    -1400 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR1
+U 1 1 5BDEDF59
+P -1800 700
+F 0 "#PWR1" H -1800 550 50  0001 C CNN
+F 1 "+5V" H -1800 850 50  0000 C CNN
+F 2 "" H -1800 700 50  0001 C CNN
+F 3 "" H -1800 700 50  0001 C CNN
+	1    -1800 700 
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 5BDEE4BC
+P -1800 650
+F 0 "#FLG1" H -1800 725 50  0001 C CNN
+F 1 "PWR_FLAG" H -1800 800 50  0000 C CNN
+F 2 "" H -1800 650 50  0001 C CNN
+F 3 "" H -1800 650 50  0001 C CNN
+	1    -1800 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R18
+U 1 1 5BDEFB31
+P 7700 3800
+F 0 "R18" V 7800 3800 50  0000 C CNN
+F 1 "10k" V 7700 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7630 3800 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 7700 3800 50  0001 C CNN
+	1    7700 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L C C10
+U 1 1 5BDF00E3
+P 9300 4050
+F 0 "C10" H 9325 4150 50  0000 L CNN
+F 1 "1nF" H 9325 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9338 3900 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/522764173" H 9300 4050 50  0001 C CNN
+	1    9300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR22
+U 1 1 5BDF41B9
+P 5100 4750
+F 0 "#PWR22" H 5100 4500 50  0001 C CNN
+F 1 "GNDD" H 5100 4625 50  0001 C CNN
+F 2 "" H 5100 4750 50  0001 C CNN
+F 3 "" H 5100 4750 50  0001 C CNN
+	1    5100 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 3350 0    55   Input ~ 0
+BTN1
+Text GLabel 4300 3850 0    55   Input ~ 0
+BTN2
+Text GLabel 4300 4350 0    55   Input ~ 0
+BTN3
+Text GLabel 4300 3550 0    55   Input ~ 0
+PWRON
+Text GLabel 3250 5800 2    55   Input ~ 0
+BTN1
+Text GLabel 3250 5900 2    55   Input ~ 0
+BTN2
+Text GLabel 3250 6000 2    55   Input ~ 0
+BTN3
+Text GLabel 4900 2100 2    55   Input ~ 0
+PWRON
+$Comp
+L C C15
+U 1 1 5BDF7DC7
+P 4750 2500
+F 0 "C15" H 4775 2600 50  0000 L CNN
+F 1 "0.1uF" H 4775 2400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4788 2350 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/grm21br71h104k" H 4750 2500 50  0001 C CNN
+	1    4750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR19
+U 1 1 5BDF7F1F
+P 4750 2800
+F 0 "#PWR19" H 4750 2550 50  0001 C CNN
+F 1 "GNDD" H 4750 2675 50  0001 C CNN
+F 2 "" H 4750 2800 50  0001 C CNN
+F 3 "" H 4750 2800 50  0001 C CNN
+	1    4750 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 6850 2    55   Input ~ 0
+BTN2
+$Comp
+L SW_Push_SPDT SW2
+U 1 1 5BE02172
+P 4700 3950
+F 0 "SW2" H 4700 4120 50  0000 C CNN
+F 1 "MSW-11" H 4700 3750 50  0000 C CNN
+F 2 "MyFootprints:SM5-00N-115" H 4700 3950 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/sm5-00n-115-msw-11" H 4700 3950 50  0001 C CNN
+	1    4700 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SW_Push_SPDT SW3
+U 1 1 5BE02271
+P 4700 4450
+F 0 "SW3" H 4700 4620 50  0000 C CNN
+F 1 "MSW-11" H 4700 4250 50  0000 C CNN
+F 2 "MyFootprints:SM5-00N-115" H 4700 4450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/sm5-00n-115-msw-11" H 4700 4450 50  0001 C CNN
+	1    4700 4450
+	-1   0    0    -1  
+$EndComp
+Text Notes 4900 3400 0    60   ~ 0
+"+"
+Text Notes 4850 3900 0    60   ~ 0
+"OK"
+Text Notes 4900 4400 0    60   ~ 0
+"-"
+$Comp
+L C C16
+U 1 1 5BE04420
+P 8300 5800
+F 0 "C16" H 8325 5900 50  0000 L CNN
+F 1 "0.1uF" H 8325 5700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8338 5650 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/grm21br71h104k" H 8300 5800 50  0001 C CNN
+	1    8300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR40
+U 1 1 5BE04426
+P 8300 6050
+F 0 "#PWR40" H 8300 5800 50  0001 C CNN
+F 1 "GNDD" H 8300 5925 50  0001 C CNN
+F 2 "" H 8300 6050 50  0001 C CNN
+F 3 "" H 8300 6050 50  0001 C CNN
+	1    8300 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR39
+U 1 1 5BE0442C
+P 8300 5550
+F 0 "#PWR39" H 8300 5400 50  0001 C CNN
+F 1 "+3.3V" H 8300 5690 50  0000 C CNN
+F 2 "" H 8300 5550 50  0001 C CNN
+F 3 "" H 8300 5550 50  0001 C CNN
+	1    8300 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP73831/2 U1
+U 1 1 5C1D9FC7
+P 2400 1350
+F 0 "U1" H 2400 1650 60  0000 C CNN
+F 1 "MCP73831/2" H 2400 1050 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 2450 1200 60  0001 C CNN
+F 3 "https://www.chipdip.ru/product/mcp73831t-2aci-ot" H 2450 1200 60  0001 C CNN
+	1    2400 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5C1DA672
+P 3100 1650
+F 0 "R5" H 3000 1800 50  0000 C CNN
+F 1 "10k" V 3100 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3030 1650 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 3100 1650 50  0001 C CNN
+	1    3100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR12
+U 1 1 5C1DA7C2
+P 3100 2000
+F 0 "#PWR12" H 3100 1750 50  0001 C CNN
+F 1 "GNDD" H 3100 1875 50  0001 C CNN
+F 2 "" H 3100 2000 50  0001 C CNN
+F 3 "" H 3100 2000 50  0001 C CNN
+	1    3100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR11
+U 1 1 5C1DBE13
+P 2850 2000
+F 0 "#PWR11" H 2850 1750 50  0001 C CNN
+F 1 "GNDD" H 2850 1875 50  0001 C CNN
+F 2 "" H 2850 2000 50  0001 C CNN
+F 3 "" H 2850 2000 50  0001 C CNN
+	1    2850 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5C1DD3B2
+P 1850 1350
+F 0 "R3" H 2000 1350 50  0000 C CNN
+F 1 "10k" V 1850 1350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1780 1350 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 1850 1350 50  0001 C CNN
+	1    1850 1350
+	1    0    0    -1  
+$EndComp
+Text GLabel 900  1250 0    55   Input ~ 0
+STAT
+$Comp
+L R R2
+U 1 1 5C1DEA96
+P 1550 1500
+F 0 "R2" V 1630 1500 50  0000 C CNN
+F 1 "10k" V 1550 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 1480 1500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 1550 1500 50  0001 C CNN
+	1    1550 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR8
+U 1 1 5C1DF85E
+P 1850 1100
+F 0 "#PWR8" H 1850 950 50  0001 C CNN
+F 1 "+5V" H 1850 1240 50  0000 C CNN
+F 2 "" H 1850 1100 50  0001 C CNN
+F 3 "" H 1850 1100 50  0001 C CNN
+	1    1850 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 5150 2    55   Input ~ 0
+STAT
+$Comp
+L +3.3V #PWR3
+U 1 1 5C1E1998
+P 1050 800
+F 0 "#PWR3" H 1050 650 50  0001 C CNN
+F 1 "+3.3V" H 1050 940 50  0000 C CNN
+F 2 "" H 1050 800 50  0001 C CNN
+F 3 "" H 1050 800 50  0001 C CNN
+	1    1050 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5C1E0F9C
+P 1050 1050
+F 0 "R1" H 1200 1050 50  0000 C CNN
+F 1 "10k" V 1050 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 980 1050 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000079514" H 1050 1050 50  0001 C CNN
+	1    1050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR4
+U 1 1 5C1E07E2
+P 1050 2000
+F 0 "#PWR4" H 1050 1750 50  0001 C CNN
+F 1 "GNDD" H 1050 1875 50  0001 C CNN
+F 2 "" H 1050 2000 50  0001 C CNN
+F 3 "" H 1050 2000 50  0001 C CNN
+	1    1050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L BC817 Q1
+U 1 1 5C1DE567
+P 1150 1500
+F 0 "Q1" H 1350 1575 50  0000 L CNN
+F 1 "BC817" H 1350 1500 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 1350 1425 50  0001 L CIN
+F 3 "https://www.chipdip.ru/product/bc817-40lt1" H 1150 1500 50  0001 L CNN
+	1    1150 1500
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3250 6550 2    55   Input ~ 0
+RX
+Text GLabel 3250 6650 2    55   Input ~ 0
+TX
+$Comp
+L C C1
+U 1 1 5C1F1C2D
+P 3350 1650
+F 0 "C1" H 3375 1750 50  0000 L CNN
+F 1 "1uF" H 3375 1550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3388 1500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/9000038356" H 3350 1650 50  0001 C CNN
+	1    3350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR15
+U 1 1 5C1F1FE8
+P 3350 2000
+F 0 "#PWR15" H 3350 1750 50  0001 C CNN
+F 1 "GNDD" H 3350 1875 50  0001 C CNN
+F 2 "" H 3350 2000 50  0001 C CNN
+F 3 "" H 3350 2000 50  0001 C CNN
+	1    3350 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 1200
+Wire Wire Line
+	3500 1200 3500 1050
+Wire Wire Line
+	3500 1050 3600 1050
+Wire Wire Line
+	2750 1200 4100 1200
+Wire Wire Line
+	3250 5050 3100 5050
+Wire Wire Line
+	5850 3700 5950 3700
+Wire Wire Line
+	9900 1200 9900 1450
+Wire Wire Line
+	9900 1850 9900 1750
+Wire Wire Line
+	7700 1500 7700 1750
+Wire Wire Line
+	7700 1600 7850 1600
+Wire Wire Line
+	7700 2050 7700 2100
+Connection ~ 7700 1600
+Wire Wire Line
+	7700 1200 7700 1050
+Wire Wire Line
+	7600 1050 8150 1050
+Wire Wire Line
+	8150 1850 8150 1800
+Wire Wire Line
+	8150 2150 8150 2250
+Wire Wire Line
+	8150 2550 8150 2600
+Wire Wire Line
+	7700 2500 7700 2600
+Wire Wire Line
+	8300 2200 8150 2200
+Connection ~ 8150 2200
+Wire Wire Line
+	7300 2300 7400 2300
+Wire Wire Line
+	9900 1350 10350 1350
+Connection ~ 9900 1350
+Wire Wire Line
+	1100 7250 1200 7250
+Wire Wire Line
+	1100 7050 1100 7400
+Wire Wire Line
+	1200 7150 1100 7150
+Connection ~ 1100 7250
+Wire Wire Line
+	1200 7050 1100 7050
+Connection ~ 1100 7150
+Wire Wire Line
+	1200 4950 1100 4950
+Wire Wire Line
+	1100 4750 1100 5250
+Wire Wire Line
+	1100 5050 1200 5050
+Connection ~ 1100 4950
+Wire Wire Line
+	1100 5250 1200 5250
+Connection ~ 1100 5050
+Wire Wire Line
+	2500 4150 2600 4150
+Wire Wire Line
+	2600 4150 2600 4000
+Wire Wire Line
+	2500 4000 2650 4000
+Connection ~ 2600 4000
+Wire Wire Line
+	2500 3900 2650 3900
+Wire Wire Line
+	2500 3800 2650 3800
+Wire Wire Line
+	3300 3900 3150 3900
+Wire Wire Line
+	2100 4150 2200 4150
+Wire Wire Line
+	3150 3800 3300 3800
+Wire Wire Line
+	3300 3800 3300 3700
+Wire Wire Line
+	3150 4000 3300 4000
+Wire Wire Line
+	3300 4000 3300 4050
+Wire Wire Line
+	5650 6950 6000 6950
+Wire Wire Line
+	5650 6850 6000 6850
+Wire Wire Line
+	6000 7150 5950 7150
+Wire Wire Line
+	5950 7150 5950 7250
+Wire Wire Line
+	5650 7050 6000 7050
+Wire Wire Line
+	3250 4950 3100 4950
+Wire Wire Line
+	5750 6750 5750 6950
+Connection ~ 5750 6950
+Wire Wire Line
+	5950 6650 5950 6850
+Connection ~ 5950 6850
+Wire Wire Line
+	5750 6350 5750 6450
+Wire Wire Line
+	5950 6250 5950 6350
+Wire Wire Line
+	3250 6200 3100 6200
+Wire Wire Line
+	3100 6300 3250 6300
+Wire Wire Line
+	9700 3800 9700 3900
+Connection ~ 9700 3800
+Wire Wire Line
+	9700 4200 9700 4300
+Wire Wire Line
+	9300 3800 9300 3900
+Connection ~ 9300 3800
+Wire Wire Line
+	9300 4200 9300 4300
+Wire Wire Line
+	8700 4200 8700 4300
+Wire Wire Line
+	3650 1800 3650 2000
+Wire Wire Line
+	3650 1200 3650 1500
+Connection ~ 3650 1200
+Wire Wire Line
+	4500 1200 4550 1200
+Wire Wire Line
+	4300 2550 4300 2800
+Wire Wire Line
+	4300 1500 4300 1750
+Wire Wire Line
+	4300 2050 4300 2150
+Wire Wire Line
+	4000 1200 4000 1300
+Connection ~ 4000 1200
+Wire Wire Line
+	4000 1600 4000 1650
+Wire Wire Line
+	4000 1650 4300 1650
+Connection ~ 4300 1650
+Wire Wire Line
+	4950 1200 5400 1200
+Wire Wire Line
+	5100 1200 5100 1100
+Connection ~ 5100 1200
+Wire Wire Line
+	5250 1200 5250 1350
+Connection ~ 5250 1200
+Wire Wire Line
+	6150 1350 6150 1200
+Wire Wire Line
+	6000 1200 6250 1200
+Wire Wire Line
+	5250 1650 5250 1750
+Wire Wire Line
+	6150 1650 6150 1750
+Wire Wire Line
+	5700 1500 5700 1750
+Connection ~ 6150 1200
+Wire Wire Line
+	9450 5550 9450 5650
+Wire Wire Line
+	9450 5950 9450 6050
+Wire Wire Line
+	9800 5550 9800 5650
+Wire Wire Line
+	9800 5950 9800 6050
+Wire Wire Line
+	1050 3550 1050 3600
+Wire Wire Line
+	1050 3600 1150 3600
+Wire Wire Line
+	1150 3600 1150 3550
+Connection ~ 1100 3600
+Wire Wire Line
+	8700 5550 8700 5650
+Wire Wire Line
+	8700 5950 8700 6050
+Wire Wire Line
+	10200 5950 10200 6050
+Wire Wire Line
+	10200 5550 10200 5650
+Wire Wire Line
+	10550 5550 10550 5650
+Wire Wire Line
+	10550 5950 10550 6050
+Wire Wire Line
+	4200 5450 4200 5400
+Wire Wire Line
+	3900 5400 4400 5400
+Wire Wire Line
+	3900 5400 3900 5550
+Wire Wire Line
+	3900 5550 3100 5550
+Wire Wire Line
+	3100 5650 3900 5650
+Wire Wire Line
+	3900 5650 3900 5800
+Wire Wire Line
+	3900 5800 4400 5800
+Wire Wire Line
+	4200 5800 4200 5750
+Connection ~ 4200 5400
+Connection ~ 4200 5800
+Wire Wire Line
+	4700 5400 4800 5400
+Wire Wire Line
+	4800 5400 4800 5800
+Wire Wire Line
+	4800 5800 4700 5800
+Wire Wire Line
+	4800 5600 4950 5600
+Wire Wire Line
+	4950 5600 4950 5650
+Connection ~ 4800 5600
+Wire Wire Line
+	10500 3750 10450 3750
+Wire Wire Line
+	10450 3750 10450 3850
+Wire Wire Line
+	10450 3850 10500 3850
+Connection ~ 10450 3800
+Wire Wire Line
+	10900 3950 10900 4050
+Wire Wire Line
+	9900 2650 9900 2800
+Wire Wire Line
+	9900 3100 9900 3150
+Wire Wire Line
+	9900 2750 10500 2750
+Connection ~ 9900 2750
+Wire Wire Line
+	10100 2750 10100 2950
+Wire Wire Line
+	10100 2950 10050 2950
+Connection ~ 10100 2750
+Wire Wire Line
+	10350 2750 10350 2800
+Connection ~ 10350 2750
+Wire Wire Line
+	10350 3100 10350 3150
+Wire Wire Line
+	10250 1450 10250 1350
+Connection ~ 10250 1350
+Wire Wire Line
+	10250 1750 10250 1850
+Wire Wire Line
+	8150 1050 8150 1400
+Connection ~ 7700 1050
+Wire Wire Line
+	1100 5550 1200 5550
+Wire Wire Line
+	1100 6300 1200 6300
+Wire Wire Line
+	1100 6400 1200 6400
+Wire Wire Line
+	1450 2950 1750 2950
+Wire Wire Line
+	1950 2950 2000 2950
+Wire Wire Line
+	4750 750  4750 900 
+Wire Wire Line
+	5100 750  5100 800 
+Wire Wire Line
+	7100 5650 7000 5650
+Wire Wire Line
+	7000 5550 7000 5750
+Connection ~ 7000 5650
+Wire Wire Line
+	7000 6100 7000 6050
+Wire Wire Line
+	7000 5200 7000 5250
+Wire Wire Line
+	3250 6400 3100 6400
+Wire Wire Line
+	3250 6750 3100 6750
+Wire Wire Line
+	3550 2350 3650 2350
+Wire Wire Line
+	3950 2350 4000 2350
+Wire Wire Line
+	10050 4300 10050 4200
+Wire Wire Line
+	10050 3800 10050 3900
+Connection ~ 10050 3800
+Wire Wire Line
+	10450 3800 10350 3800
+Wire Wire Line
+	7450 3500 7650 3500
+Wire Wire Line
+	7450 4100 7650 4100
+Connection ~ 7450 3800
+Connection ~ 7950 3800
+Wire Wire Line
+	7850 3800 8850 3800
+Wire Wire Line
+	8350 3800 8350 4550
+Wire Wire Line
+	6650 4550 6650 3900
+Wire Wire Line
+	6650 3900 6750 3900
+Connection ~ 8350 3800
+Wire Wire Line
+	7950 4300 7950 4350
+Wire Wire Line
+	6950 4100 6950 4150
+Wire Wire Line
+	6950 3450 6950 3500
+Wire Wire Line
+	7950 3250 7950 3300
+Wire Wire Line
+	6350 4100 6350 4150
+Wire Wire Line
+	6350 3800 6350 3700
+Wire Wire Line
+	6250 3700 6750 3700
+Wire Wire Line
+	6650 4550 7300 4550
+Wire Wire Line
+	8350 4550 7600 4550
+Connection ~ 6350 3700
+Wire Wire Line
+	3250 5150 3100 5150
+Wire Wire Line
+	6950 2300 7000 2300
+Wire Wire Line
+	9900 800  9900 900 
+Wire Wire Line
+	9800 800  9900 800 
+Wire Wire Line
+	7450 3500 7450 4100
+Wire Wire Line
+	7350 3800 7550 3800
+Wire Wire Line
+	7950 3700 7950 3900
+Wire Wire Line
+	3250 5250 3100 5250
+Wire Wire Line
+	3100 5350 3250 5350
+Wire Wire Line
+	3250 5450 3100 5450
+Wire Wire Line
+	-950 650  -950 700 
+Wire Wire Line
+	-500 700  -500 650 
+Wire Wire Line
+	-1400 650  -1400 700 
+Wire Wire Line
+	-1800 650  -1800 700 
+Wire Wire Line
+	5100 4450 4900 4450
+Wire Wire Line
+	5100 3450 5100 4750
+Wire Wire Line
+	5100 3950 4900 3950
+Connection ~ 5100 4450
+Wire Wire Line
+	5100 3450 4900 3450
+Connection ~ 5100 3950
+Wire Wire Line
+	4300 4350 4500 4350
+Wire Wire Line
+	4500 3850 4300 3850
+Wire Wire Line
+	4300 3350 4500 3350
+Wire Wire Line
+	4300 3550 4500 3550
+Wire Wire Line
+	4400 3550 4400 4550
+Wire Wire Line
+	4400 4550 4500 4550
+Wire Wire Line
+	4400 4050 4500 4050
+Connection ~ 4400 4050
+Connection ~ 4400 3550
+Wire Wire Line
+	4300 2100 4900 2100
+Connection ~ 4300 2100
+Wire Wire Line
+	4750 2800 4750 2650
+Wire Wire Line
+	4750 2350 4750 2100
+Connection ~ 4750 2100
+Wire Wire Line
+	3250 6100 3100 6100
+Wire Wire Line
+	3100 6000 3250 6000
+Wire Wire Line
+	3250 5900 3100 5900
+Wire Wire Line
+	3100 5800 3250 5800
+Wire Wire Line
+	3250 6850 3100 6850
+Wire Wire Line
+	3100 7050 3250 7050
+Wire Wire Line
+	3250 7150 3100 7150
+Wire Wire Line
+	3250 7250 3100 7250
+Wire Wire Line
+	8300 5550 8300 5650
+Wire Wire Line
+	8300 5950 8300 6050
+Wire Wire Line
+	2750 1500 2850 1500
+Wire Wire Line
+	2850 1500 2850 2000
+Wire Wire Line
+	2750 1350 3100 1350
+Wire Wire Line
+	3100 1350 3100 1500
+Wire Wire Line
+	3100 2000 3100 1800
+Wire Wire Line
+	1850 1200 2050 1200
+Wire Wire Line
+	1700 1500 2050 1500
+Connection ~ 1850 1500
+Wire Wire Line
+	1350 1500 1400 1500
+Wire Wire Line
+	1850 1200 1850 1100
+Connection ~ 1850 1200
+Connection ~ 1050 1250
+Wire Wire Line
+	900  1250 1050 1250
+Wire Wire Line
+	1050 800  1050 900 
+Wire Wire Line
+	1050 1200 1050 1300
+Wire Wire Line
+	1050 1700 1050 2000
+Wire Wire Line
+	3250 6550 3100 6550
+Wire Wire Line
+	3250 6650 3100 6650
+Wire Wire Line
+	3100 6950 3150 6950
+Wire Wire Line
+	3150 6950 3150 7050
+Connection ~ 3150 7050
+Wire Wire Line
+	9800 2250 9900 2250
+Wire Wire Line
+	9900 2250 9900 2350
+Wire Wire Line
+	3350 1800 3350 2000
+Wire Wire Line
+	3350 1500 3350 1200
+Connection ~ 3350 1200
+Wire Wire Line
+	1100 3600 1100 3650
+Text Notes 2800 900  0    60   ~ 0
+Коммутация питания
+Text Notes 4550 3200 0    60   ~ 0
+Кнопки
+Text Notes 7450 900  0    60   ~ 0
+Делитель для контроля\nнапряжения аккумулятора
+Text Notes 10250 1150 0    60   ~ 0
+Делитель для\nконтроля АЦП
+Text Notes 10200 2500 0    60   ~ 0
+Источник опорного\nнапряжения
+Text Notes 8450 3600 0    60   ~ 0
+Выходной ШИМ-ЦАП
+Text Notes 6300 6550 0    60   ~ 0
+Дисплей
+Wire Wire Line
+	9150 3800 10150 3800
+Wire Wire Line
+	8700 3900 8700 3800
+Connection ~ 8700 3800
+Wire Wire Line
+	9100 5950 9100 6050
+Wire Wire Line
+	9100 5550 9100 5650
+$Comp
+L GNDD #PWR45
+U 1 1 5BE03C63
+P 9100 6050
+F 0 "#PWR45" H 9100 5800 50  0001 C CNN
+F 1 "GNDD" H 9100 5925 50  0001 C CNN
+F 2 "" H 9100 6050 50  0001 C CNN
+F 3 "" H 9100 6050 50  0001 C CNN
+	1    9100 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C17
+U 1 1 5BE03C5D
+P 9100 5800
+F 0 "C17" H 9125 5900 50  0000 L CNN
+F 1 "0.1uF" H 9125 5700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9138 5650 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/grm21br71h104k" H 9100 5800 50  0001 C CNN
+	1    9100 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR44
+U 1 1 5BE03C57
+P 9100 5550
+F 0 "#PWR44" H 9100 5400 50  0001 C CNN
+F 1 "+5V" H 9100 5690 50  0000 C CNN
+F 2 "" H 9100 5550 50  0001 C CNN
+F 3 "" H 9100 5550 50  0001 C CNN
+	1    9100 5550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
